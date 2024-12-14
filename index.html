@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الدودة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- شاشة البداية -->
+<div id="startScreen">
+    <h1>لعبة الدودة</h1>
+    <p>اضغط على "ابدأ" للعب</p>
+    <p>أعلى سكور: <span id="highScore">0</span></p>
+    <button id="startButton">ابدأ</button>
+</div>
+
+<!-- شاشة اللعبة -->
+<div id="gameScreen" style="display:none;">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="scoreBoard">
+        <p id="score">النقاط: 0</p>
+    </div>
+    <div id="controls">
+        <button id="up">↑</button>
+        <button id="down">↓</button>
+        <button id="left">←</button>
+        <button id="right">→</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

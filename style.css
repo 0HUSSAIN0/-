@@ -1,0 +1,94 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    text-align: center;
+}
+
+/* شاشة البداية */
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c2c2c, #4a4a4a);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+#startScreen h1 {
+    font-size: 50px;
+    color: #ff6347;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+#startScreen p {
+    font-size: 20px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+#startScreen button {
+    background-color: #ff6347;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#startScreen button:hover {
+    background-color: #e55342;
+    transform: scale(1.1);
+}
+
+#startScreen button:active {
+    transform: scale(0.9);
+}
+
+/* شاشة اللعبة */
+#gameCanvas {
+    background-color: #111;
+    margin: 20px auto;
+    border: 3px solid #ff6347;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#scoreBoard {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#controls button {
+    margin: 5px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #333;
+    border: 2px solid #ff6347;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#controls button:hover {
+    background-color: #444;
+}
